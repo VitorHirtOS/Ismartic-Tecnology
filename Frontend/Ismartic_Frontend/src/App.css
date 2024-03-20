@@ -8,6 +8,18 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: Varela;
+}
+
+:root.light-mode{
+
+}
+
+:root{
+  --color: #161616;
+  --background-color-area: #559DB4;
+  --backgound-color-area-contact: #E6EBF7;
+  --background-color-area-icons: #5D6D9D;
 }
 
 a{
@@ -16,4 +28,120 @@ a{
 
 /* Scroll */
 
+/* Header */
 
+.header-box{
+  display: flex;
+  border: 1px solid red;
+}
+
+.header-box div{
+  flex: 1;
+}
+
+.header-left-box{
+  border: 1px solid red;
+  display: flex;
+}
+
+.header-left-box div:nth-child(1){
+  background-color: #559DB4;
+}
+
+.header-left-box div:nth-child(2){
+  background-color: #559DB4;
+}
+
+.bars-left-box{
+  position: relative;
+    overflow: hidden;
+}
+
+.bars-left-box span:nth-child(odd){
+  position: absolute;
+  background-color: #559DB4;
+  left: -4.1rem;
+  bottom: -3rem;
+  width: 230px;
+  height: 100px;
+  transform: rotate(45deg)
+}
+
+.header-center-box{
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-center-box nav ul{
+  display: flex;
+  gap: 1rem;
+}
+
+.header-right-box{
+  display: flex;
+  border: 1px solid blue;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo span:nth-child(1){
+  border: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+}
+
+.logo span:nth-child(2){
+  border: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+}
+
+.logo span:nth-child(3){
+  border: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.header-right-box > a:nth-child(2), button{
+   background-color: #559DB4;
+}
+
+.header-right-box > a:nth-child(2){
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.header-right-box > button{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.header-right-box > button i{
+  font-size: 1.5rem;
+}

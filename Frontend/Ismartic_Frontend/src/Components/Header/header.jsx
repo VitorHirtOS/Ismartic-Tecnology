@@ -1,21 +1,21 @@
 function Header(){
   return(
     <>
-     <div>
-        <div>
+    <div className="header-box">
+      <div className="header-left-box">
+        <div className="logo">
           <span>.</span>
           <span>.</span>
           <span>.</span>
         </div>
-        <div>
+          <div>
           <h1>Ismartic <br/>Tecnology</h1>
         </div>
-        <div>
-          <span>.</span>
+        <div class="bars-left-box">
           <span>.</span>
         </div>
-     </div>
-     <div>
+      </div>
+      <div className="header-center-box">
         <nav>
           <ul>
             <li>Home</li>
@@ -25,20 +25,19 @@ function Header(){
             <li>Contact</li>
           </ul>
         </nav>
-     </div>        
-     <div>
-        <a href="#">
-          Sing Up
-        </a>
-        <a href="#">
-          Add Listing
-        </a>
+      </div>
+      <div className="header-right-box">
+           <a href="#">
+            Sing Up
+           </a>
+           <a href="#">
+            Add Listing
+           </a>
+            <button>
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+      </div>
      </div>
-     <div>
-        <button>
-          <i class="fas fa-shopping-cart"></i>
-        </button>
-     </div>  
     </>
   )
 };
