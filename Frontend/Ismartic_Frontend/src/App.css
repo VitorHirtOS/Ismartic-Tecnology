@@ -28,11 +28,29 @@ a{
 
 /* Scroll */
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #BFDEE8;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #559DB4;
+  border-radius: 10px;
+  border: 2px solid #BFDEE8; 
+}
+
 /* Header */
 
 .header-box{
   display: flex;
-  border: 1px solid red;
 }
 
 .header-box div{
@@ -40,7 +58,6 @@ a{
 }
 
 .header-left-box{
-  border: 1px solid red;
   display: flex;
 }
 
@@ -68,7 +85,6 @@ a{
 }
 
 .header-center-box{
-  border: 1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,14 +97,12 @@ a{
 
 .header-right-box{
   display: flex;
-  border: 1px solid blue;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
 .logo{
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +110,6 @@ a{
 }
 
 .logo span:nth-child(1){
-  border: 1px solid blue;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -105,7 +118,6 @@ a{
 }
 
 .logo span:nth-child(2){
-  border: 1px solid blue;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -114,7 +126,6 @@ a{
 }
 
 .logo span:nth-child(3){
-  border: 1px solid blue;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -145,3 +156,107 @@ a{
 .header-right-box > button i{
   font-size: 1.5rem;
 }
+
+/* Banner */
+
+
+.banner-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.banner-left-box h1{
+  font-size: 3rem;
+}
+
+.banner-left-box h1, h4, span{
+  font-weight: normal;
+  font-family: Roboto;
+  width: 100%;
+}
+
+.banner-left-box h4{
+  margin-bottom: 3rem;
+} 
+
+.medicArea{
+  background-image: url(../public/medicBackground.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px){
+  .medicArea{
+    background-size: 100%;
+  }
+}
+
+.medicArea img{
+  max-width: 100%;
+  height: 100%;
+}
+
+.banner-box div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem
+}
+
+.banner-right-box{
+  width: 100%;
+}
+
+.banner-right-box h4{
+  display: flex;
+  align-items: center;
+}
+
+.banner-right-box span{
+  transform: translaterY(1px);
+  margin-left: .2rem;
+}
+
+.banner-right-box button, h4{
+  margin-bottom: .5rem;
+}
+
+.banner-right-box button{
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.block-box-left{
+  width: 700px;
+  padding: 1rem;
+}
+
+.banner-right-box .fas{
+  font-size: 1.6rem;
+}
+
+.banner-bottom-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Varela;
+}
+
+.banner-bottom-box h1{
+  font-weight: normal;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
